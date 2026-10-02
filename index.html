@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Natasha &amp; Jamie: wedding</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23788E77'/%3E%3Cpath d='M32 46c-10-6-14-12-14-18a7 7 0 0 1 14-2 7 7 0 0 1 14 2c0 6-4 12-14 18z' fill='%23F0D0CF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#788E77;--sage-d:#5F735E;--ink:#3F4D3E;--muted:#6E7B69;
+  --olive:#C5C099;--olive-ink:#4F5236;
+  --cream:#EADEBF;--cream-ink:#5A5233;
+  --marigold:#F7C883;--marigold-ink:#6A4510;
+  --apricot:#F5AB7E;--apricot-ink:#6B3415;
+  --rose:#E29796;--rose-ink:#8A3433;
+  --blush:#F0D0CF;--blush-ink:#6E3433;
+  --paper:#FBF7EE;--white:#FFFFFF;--line:#E9DFC8;
+  --display:'Outfit',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --body:'Manrope',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r-lg:22px;--r-md:16px;--r-sm:11px;
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--paper);scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body.modal-open{overflow:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+img{max-width:100%}
+[hidden]{display:none!important}
+[data-go]{cursor:pointer}
+:focus-visible{outline:2px solid var(--sage);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-weight:300;margin:0;line-height:1.12;letter-spacing:.005em}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+svg.i{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+.banner{background:var(--marigold);color:var(--marigold-ink);font-size:13.5px;text-align:center;padding:8px 16px}
+
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(251,247,238,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,4vw,40px)}
+.brand{font-family:var(--display);font-weight:300;font-size:21px;letter-spacing:.2em;text-decoration:none;white-space:nowrap}
+.links{display:flex;align-items:center;gap:4px}
+.nl{background:none;border:0;padding:8px 14px;border-radius:999px;font-size:14px;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.nl:hover{color:var(--ink);background:rgba(120,142,119,.1)}
+.nl.active{color:var(--ink);background:var(--cream)}
+.nl svg{width:15px;height:15px}
+.nav .nav-toggle{display:none}
+.dd{position:relative}
+.dd-menu{position:absolute;top:calc(100% + 10px);left:0;min-width:270px;max-height:min(70vh,520px);overflow:auto;background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);padding:8px;box-shadow:0 18px 40px rgba(63,77,62,.13);display:none}
+.dd.open .dd-menu{display:block}
+.dd-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:var(--r-sm);text-decoration:none;font-size:14.5px}
+.dd-item:hover,.dd-item.cur{background:var(--paper)}
+.dd-item small{margin-left:auto;color:var(--muted);font-size:12px;padding-left:12px}
+.dd-empty{padding:10px;color:var(--muted);font-size:14px}
+.dd-add{width:100%;margin-top:6px;border:0;border-top:1px solid var(--line);background:none;padding:12px 10px 6px;display:flex;gap:8px;align-items:center;color:var(--sage-d);font-weight:600;font-size:14px}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;background:var(--olive)}
+.dot.researching{background:var(--rose)}.dot.booked{background:var(--olive)}.dot.paid{background:var(--sage)}
+
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid transparent;border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s,transform .1s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn-primary{background:var(--sage);color:var(--paper)}
+.btn-primary:hover{background:var(--sage-d)}
+.btn-ghost{background:transparent;border-color:var(--olive);color:var(--ink)}
+.btn-ghost:hover{background:var(--cream)}
+.btn-light{background:var(--paper);color:var(--ink)}
+.btn-light:hover{background:var(--white)}
+.btn-danger{background:var(--rose);color:#4A1717}
+.btn-danger:hover{background:#D88584}
+.btn-text-danger{background:none;border:0;color:var(--rose-ink);padding:9px 2px;font-size:14px;font-weight:600}
+.btn-sm{padding:6px 13px;font-size:13px}
+.btn-sm svg{width:15px;height:15px}
+.btn-block{width:100%;justify-content:center}
+.icon-btn{width:36px;height:36px;border-radius:50%;border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;color:var(--muted);flex:none;text-decoration:none}
+.icon-btn:hover{background:var(--cream);color:var(--ink)}
+.icon-btn.sm{width:30px;height:30px}
+.icon-btn.sm svg{width:15px;height:15px}
+.linkish{background:none;border:0;color:var(--sage-d);font-size:13.5px;text-decoration:underline;text-underline-offset:3px;display:block;margin:16px auto 0}
+
+main{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,40px) 96px}
+
+.hero{margin-top:24px;border-radius:30px;background-color:var(--sage);background-position:center;background-size:cover;color:var(--paper);position:relative;overflow:hidden;min-height:440px;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero.has-photo::before{content:'';position:absolute;inset:0;background:rgba(48,60,47,.46)}
+.hero-inner{position:relative;padding:60px 24px;max-width:860px}
+.hero h1{font-size:clamp(42px,7.5vw,82px);font-weight:200;letter-spacing:.03em}
+.hero .when{color:var(--marigold);letter-spacing:.06em;margin-top:14px;font-size:15.5px}
+.hero .where{margin-top:6px}
+.hero .where a{color:var(--blush);text-decoration:none;display:inline-flex;gap:6px;align-items:center;font-size:15px}
+.hero .where a:hover{text-decoration:underline;text-underline-offset:3px}
+.hero .where svg{width:16px;height:16px}
+.countdown{display:flex;gap:12px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+.cd{background:var(--paper);color:var(--ink);border-radius:var(--r-md);padding:12px 18px 10px;min-width:88px}
+.cd b{display:block;font-family:var(--display);font-weight:300;font-size:38px;line-height:1.1;font-variant-numeric:tabular-nums}
+.cd span{font-size:12.5px;color:var(--sage-d)}
+.married{font-family:var(--display);font-weight:200;font-size:44px;color:var(--marigold)}
+.hero .btn-light{margin-top:30px}
+
+.block{margin-top:52px}
+.sec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head h2{font-size:32px}
+.page-head{margin:44px 0 24px}
+.page-head h1{font-size:clamp(38px,6vw,58px);font-weight:200}
+
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.metric{border-radius:var(--r-lg);padding:18px 20px 20px}
+.metric .lbl{font-size:13.5px}
+.metric .val{font-family:var(--display);font-size:34px;font-weight:300;line-height:1.2;font-variant-numeric:tabular-nums;margin-top:4px}
+.metric .hint{font-size:12.5px;margin-top:2px}
+.m-cream{background:var(--cream);color:var(--cream-ink)}
+.m-olive{background:var(--olive);color:var(--olive-ink)}
+.m-sage{background:var(--sage);color:var(--paper)}
+.m-apricot{background:var(--apricot);color:var(--apricot-ink)}
+.m-rose{background:var(--rose);color:#4A1717}
+.m-marigold{background:var(--marigold);color:var(--marigold-ink)}
+.bar{height:10px;border-radius:99px;background:var(--cream);overflow:hidden;display:flex;margin-top:18px}
+.bar span{display:block;height:100%;transition:width .4s}
+.legend{display:flex;gap:6px 18px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.over{color:var(--rose-ink);font-weight:600}
+
+.two{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px}
+.two.even{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.two + .two{margin-top:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px 22px 24px}
+.card h3{font-size:23px}
+.card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;min-height:36px}
+.card.cream{background:var(--cream);border-color:transparent}
+.card.blush{background:var(--blush);border-color:transparent}
+.card.blush h3{color:var(--blush-ink)}
+.cards{display:grid;gap:20px}
+
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.row:last-child{border-bottom:0;padding-bottom:0}
+a.row:hover .row-name{text-decoration:underline;text-underline-offset:3px}
+.row-main{display:flex;align-items:center;gap:12px;min-width:0}
+.row .sub{font-size:12.5px;color:var(--muted)}
+.amt{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.chip{display:inline-block;font-size:12px;padding:3px 10px;border-radius:99px;white-space:nowrap;font-weight:600;line-height:1.5}
+.c-overdue{background:var(--rose);color:#4A1717}
+.c-soon{background:var(--marigold);color:var(--marigold-ink)}
+.c-later{background:var(--blush);color:var(--blush-ink)}
+.c-paid{background:#DCE4D6;color:var(--ink)}
+.c-cat{background:var(--cream);color:var(--cream-ink)}
+.st-researching{background:var(--blush);color:var(--blush-ink)}
+.st-booked{background:var(--olive);color:var(--olive-ink)}
+.st-paid{background:var(--sage);color:var(--paper)}
+
+.res{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:var(--r-md);text-decoration:none;font-size:14.5px;font-weight:500;margin-bottom:8px;transition:transform .15s}
+.res:hover{transform:translateX(3px)}
+.res svg{width:17px;height:17px}
+.t-blush{background:var(--blush);color:var(--blush-ink)}
+.t-cream{background:var(--cream);color:var(--cream-ink)}
+.t-olive{background:var(--olive);color:var(--olive-ink)}
+.t-marigold{background:var(--marigold);color:var(--marigold-ink)}
+
+.board{columns:4 210px;column-gap:14px}
+.pin{position:relative;break-inside:avoid;margin:0 0 14px;border-radius:var(--r-md);overflow:hidden;background:var(--cream);cursor:zoom-in}
+.pin img{display:block;width:100%;height:auto}
+.pin .del{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(251,247,238,.95);color:var(--ink);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s}
+.pin .del:hover{background:var(--rose);color:#4A1717}
+.pin:hover .del,.pin:focus-within .del{opacity:1}
+@media (hover:none){.pin .del{opacity:.92;width:30px;height:30px;top:8px;right:8px}}
+.empty{border:1.5px dashed var(--olive);border-radius:var(--r-lg);padding:36px 24px;text-align:center;color:var(--muted)}
+.empty.drop{width:100%;display:flex;flex-direction:column;align-items:center;gap:6px;background:transparent;padding:56px 24px}
+.empty.drop:hover{background:rgba(234,222,191,.35)}
+.empty.drop svg{width:30px;height:30px;color:var(--sage)}
+.empty strong{font-family:var(--display);font-weight:400;font-size:21px;color:var(--ink)}
+[data-drop].over{outline:2px dashed var(--sage);outline-offset:8px;border-radius:var(--r-lg)}
+
+.v-head{margin:44px 0 26px}
+.v-meta{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.v-title{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.v-title h1{font-size:clamp(40px,6.5vw,66px);font-weight:200}
+.v-actions{display:flex;gap:6px;align-items:center}
+.ci{display:flex;gap:10px;align-items:center;padding:7px 0;color:var(--cream-ink);text-decoration:none;font-size:14.5px;min-width:0}
+.ci span{overflow-wrap:anywhere}
+a.ci:hover span{text-decoration:underline;text-underline-offset:3px}
+.mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.mini span{display:block;font-size:12.5px;color:var(--muted)}
+.mini b{font-family:var(--display);font-weight:300;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.25}
+.mini b.g{color:var(--sage-d)}
+.mini b.o{color:#B4613A}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+
+.timeline{position:relative;margin-left:7px;border-left:1.5px solid var(--line);padding-left:24px}
+.tl{position:relative;padding-bottom:20px}
+.tl:last-child{padding-bottom:2px}
+.tl::before{content:'';position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--paper);border:1.5px solid var(--olive)}
+.tl.paid::before{background:var(--sage);border-color:var(--sage)}
+.tl.overdue::before{background:var(--rose);border-color:var(--rose)}
+.tl.next::before{background:var(--marigold);border-color:var(--marigold)}
+.tl-top{display:flex;justify-content:space-between;gap:10px;font-weight:500}
+.tl .sub{font-size:12.5px;color:var(--muted)}
+.tl .sub-over{color:var(--rose-ink)}
+.tl-actions{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.mini-link{border:0;background:var(--paper);border-radius:99px;padding:4px 11px;font-size:12.5px;font-weight:500;color:var(--ink);display:inline-flex;gap:5px;align-items:center;text-decoration:none}
+.mini-link:hover{background:var(--cream)}
+.mini-link svg{width:14px;height:14px}
+
+.doc{display:flex;align-items:center;gap:10px;background:var(--paper);border-radius:var(--r-sm);padding:8px 8px 8px 12px;margin-bottom:8px;font-size:14px}
+.doc > svg{color:var(--blush-ink)}
+.doc a{text-decoration:none;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doc a:hover{text-decoration:underline;text-underline-offset:3px}
+.doc .k{font-size:11.5px;font-weight:600;color:var(--blush-ink);background:var(--blush);padding:2px 8px;border-radius:99px}
+.upload-slot{width:100%;border:1.5px dashed var(--rose);background:transparent;border-radius:var(--r-sm);padding:11px;color:var(--blush-ink);display:flex;gap:8px;justify-content:center;align-items:center;font-size:14px;font-weight:500;margin-top:4px}
+.upload-slot:hover{background:rgba(251,247,238,.5)}
+
+.cal-nav{display:flex;gap:4px;align-items:center}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.cal .wd{font-size:12px;color:var(--muted);text-align:center;padding-bottom:2px}
+.day{min-height:96px;border-radius:var(--r-sm);background:var(--paper);padding:6px;font-size:12px;min-width:0}
+.day.out{background:transparent}
+.day.out .n{color:#B9B7A6}
+.day.today{box-shadow:inset 0 0 0 1.5px var(--sage)}
+.day .n{color:var(--muted);font-size:12px;display:block}
+.ev{display:block;margin-top:4px;padding:3px 6px;border-radius:7px;font-size:11.5px;font-weight:600;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.settings .card{margin-bottom:20px}
+.save-bar{position:sticky;bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;justify-content:flex-end;margin-top:4px}
+.save-bar .btn{box-shadow:0 10px 26px rgba(63,77,62,.22);padding:12px 24px}
+.res-row{display:grid;grid-template-columns:1fr 1.7fr auto;gap:8px;margin-bottom:8px;align-items:center}
+.hero-prev{width:100%;aspect-ratio:16/7;object-fit:cover;border-radius:var(--r-md);display:block;background:var(--sage)}
+.empty-prev{display:flex;align-items:center;justify-content:center;color:var(--paper);font-size:14px;padding:16px;text-align:center}
+.btn-row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field > span{font-size:13px;color:var(--muted);font-weight:500}
+.field .hint-t{font-size:12.5px;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--white);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px;width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px rgba(120,142,119,.18)}
+input[type=file]{padding:8px;font-size:14px}
+input[type=checkbox]{width:18px;height:18px;accent-color:var(--sage);margin:0;flex:none}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 12px}
+.check{display:flex;align-items:center;gap:10px;margin:2px 0 16px;font-size:14.5px;cursor:pointer}
+.check.sm{margin:0;font-size:13px}
+.cur-file{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:var(--r-sm);padding:8px 12px;font-size:14px;margin-bottom:8px}
+.paid-box{background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);padding:16px 16px 2px;margin-bottom:16px}
+.paid-box input,.paid-box select{background:var(--paper)}
+
+.modal-bg{position:fixed;inset:0;background:rgba(48,60,47,.45);display:flex;align-items:center;justify-content:center;z-index:50;padding:16px;animation:fade .18s ease-out}
+.modal{background:var(--paper);border-radius:26px;width:min(580px,100%);max-height:calc(100dvh - 32px);overflow:auto;padding:24px 26px 22px;animation:rise .22s ease-out}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:12px}
+.modal-head h2{font-size:29px}
+.modal-foot{display:flex;justify-content:space-between;gap:10px;margin-top:10px;align-items:center}
+.foot-r{display:flex;gap:8px;margin-left:auto}
+.lightbox{display:flex;flex-direction:column;align-items:center;gap:12px;cursor:zoom-out;max-width:100%}
+.lightbox img{max-width:min(1000px,100%);max-height:84dvh;border-radius:var(--r-md);display:block}
+.lb-tag{background:var(--paper);padding:6px 14px;border-radius:99px;font-size:13px;font-weight:500;text-decoration:none}
+@keyframes fade{from{opacity:0}}
+@keyframes rise{from{transform:translateY(14px);opacity:0}}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:99px;font-size:14px;opacity:0;transition:opacity .25s,transform .25s;z-index:60;pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.err{background:var(--rose-ink)}
+
+.login{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px;background:var(--sage)}
+.login-card{width:min(430px,100%);background:var(--paper);border-radius:30px;padding:38px 34px 30px}
+.login-card h1{font-size:40px;font-weight:200;margin:8px 0 8px}
+.login-card .muted{margin-bottom:22px}
+.brand-lg{font-family:var(--display);letter-spacing:.2em;color:var(--sage-d);font-size:14px}
+.form-err{color:var(--rose-ink);font-size:13.5px;min-height:1.3em;margin:0 0 12px}
+.err-detail{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted);background:var(--white);border-radius:var(--r-sm);padding:10px;margin:14px 0 18px;overflow-wrap:anywhere}
+.loading{min-height:70vh;display:grid;place-items:center;color:var(--muted);font-family:var(--display);font-weight:300;font-size:22px;letter-spacing:.1em}
+.empty-page{padding:90px 0;text-align:center}
+.empty-page h1{font-size:44px;font-weight:200;margin-bottom:10px}
+.empty-page p{margin-bottom:22px;color:var(--muted)}
+
+@media (max-width:760px){
+  .nav .nav-toggle{display:inline-flex}
+  .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;align-items:stretch;padding:10px 16px 18px;border-bottom:1px solid var(--line);max-height:calc(100dvh - 70px);overflow:auto}
+  .nav.open .links{display:flex}
+  .nl{padding:11px 14px;font-size:15px}
+  .links .btn{justify-content:center;margin-top:8px}
+  .dd-menu{position:static;box-shadow:none;border:0;background:transparent;padding:0 0 0 10px;min-width:0;max-height:none}
+  .two,.two.even,.grid2{grid-template-columns:minmax(0,1fr)}
+  .hero{min-height:380px;border-radius:24px;margin-top:16px}
+  .countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%;max-width:340px;margin-inline:auto}
+  .cd{min-width:0;padding:10px 4px 8px}
+  .cd b{font-size:27px}
+  .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric .val{font-size:26px}
+  .banner{font-size:12.5px}
+  .modal-bg{align-items:flex-end;padding:0}
+  .modal{border-radius:26px 26px 0 0;max-height:92dvh;padding-bottom:calc(22px + env(safe-area-inset-bottom,0px))}
+  .board{columns:2 140px;column-gap:10px}
+  .pin{margin-bottom:10px}
+  .day{min-height:54px;padding:4px}
+  .ev{font-size:0;width:8px;height:8px;padding:0;border-radius:50%;display:inline-block;margin:3px 2px 0 0}
+  .res-row{grid-template-columns:minmax(0,1fr) auto}
+  .res-row [name=res_url]{grid-column:1;grid-row:2}
+  .res-row .icon-btn{grid-column:2;grid-row:1 / 3}
+  .mini b{font-size:23px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div id="app"><div class="loading">Loading</div></div>
+<div id="modal-root"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+'use strict';
+/* ==========================================================
+   PART 3 OF THE SETUP GUIDE: paste your values between the
+   quotes below. Leave them empty to use demo mode.
+   ========================================================== */
+const CONFIG = {
+  SUPABASE_URL: 'https://kaidkfrciiimcssfqmcr.supabase.co',
+  SUPABASE_KEY: 'sb_publishable_mHN2YssG4BveFfFJeuxMYQ_jH-OLY8K',
+  SITE_EMAIL: 'wheatley.jewett@gmail.com'
+};
+
+const BUCKET = 'wedding';
+const CATEGORIES = ['Venue','Planner','Photographer','Videographer','Florist','Caterer','Cake and desserts','DJ','Band','Officiant','Hair and makeup','Attire','Rentals','Stationery','Transportation','Lighting','Favors','Other'];
+const METHODS = ['Credit card','Debit card','Check','Bank transfer','Venmo','Zelle','PayPal','Cash','Other'];
+const STATUSES = {researching:'Researching',booked:'Booked',paid:'Paid in full'};
+const DOC_KINDS = {contract:'Contract',invoice:'Invoice',other:'Other'};
+
+const S = {store:null, role:null, user:null, data:null, cal:null, timer:null, lastKey:null, hash:''};
+try { S.hash = location.hash; } catch (e) {}
+function go(h) { S.hash = h; try { if (location.hash !== h) history.pushState(null, '', h); } catch (e) {} closeMenus(); render(); }
+const canEdit = () => S.role === 'editor';
+const app = document.getElementById('app');
+
+/* ---------- helpers ---------- */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num = v => { const n = Number(v); return Number.isFinite(n) ? n : 0; };
+const sum = (arr, f = x => x.amount) => arr.reduce((a, x) => a + num(f(x)), 0);
+const money = n => { n = Math.round(num(n) * 100) / 100; return n.toLocaleString('en-US', {style:'currency', currency:'USD', minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2}); };
+const uid = () => (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
+const pad = n => String(n).padStart(2, '0');
+const ymd = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const todayStr = () => ymd(new Date());
+const parseDate = s => { if (!s) return null; const [y,m,d] = String(s).slice(0,10).split('-').map(Number); return new Date(y, m-1, d); };
+const today0 = () => { const t = new Date(); t.setHours(0,0,0,0); return t; };
+function fmtDate(s, long) {
+  const d = parseDate(s); if (!d) return '';
+  const o = {month:'short', day:'numeric'};
+  if (long || d.getFullYear() !== new Date().getFullYear()) o.year = 'numeric';
+  return d.toLocaleDateString('en-US', o);
+}
+function payState(p) {
+  if (p.paid) return 'paid';
+  const d = parseDate(p.due_date); if (!d) return 'later';
+  const t = today0();
+  if (d < t) return 'overdue';
+  return (d - t) / 864e5 <= 30 ? 'soon' : 'later';
+}
+const sortPayments = list => [...list].sort((a, b) => { const x = a.due_date || '9999', y = b.due_date || '9999'; return x < y ? -1 : x > y ? 1 : 0; });
+const byNewest = (a, b) => String(b.created_at || '').localeCompare(String(a.created_at || ''));
+const normUrl = u => { u = String(u || '').trim(); if (!u) return ''; return /^(https?:|mailto:|tel:)/i.test(u) ? u : 'https://' + u; };
+const igUrl = h => { h = String(h || '').trim().replace(/^@/, ''); if (!h) return ''; return /instagram\.com/i.test(h) ? normUrl(h) : 'https://instagram.com/' + encodeURIComponent(h); };
+const splitNames = names => String(names || '').split(/\s*(?:&|\+|\band\b)\s*/i).map(s => s.trim()).filter(Boolean);
+function initials(names) {
+  const p = splitNames(names);
+  if (p.length >= 2) return p[0][0].toUpperCase() + ' + ' + p[1][0].toUpperCase();
+  return p[0] || 'Our wedding';
+}
+const vendorMap = () => Object.fromEntries(S.data.vendors.map(v => [v.id, v]));
+const findBy = (table, id) => S.data[table].find(x => x.id === id);
+const safeName = n => String(n || 'file').toLowerCase().replace(/[^a-z0-9.\-]+/g, '-').replace(/-+/g, '-').slice(-60);
+const imgMax = () => S.store.mode === 'demo' ? 1100 : 1800;
+function fileAttrs(url, name) {
+  if (!url) return 'href="#" aria-disabled="true"';
+  return S.store.mode === 'demo' && url.startsWith('data:') ? `href="${esc(url)}" download="${esc(name || 'file')}"` : `href="${esc(url)}" target="_blank" rel="noopener"`;
+}
+
+const IC = {
+  menu:'<path d="M4 7h16M4 12h16M4 17h16"/>', x:'<path d="M6 6l12 12M18 6L6 18"/>', plus:'<path d="M12 5v14M5 12h14"/>',
+  upload:'<path d="M12 16V4M7 9l5-5 5 5M5 20h14"/>', trash:'<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/>',
+  edit:'<path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/>', chev:'<path d="M6 9l6 6 6-6"/>',
+  left:'<path d="M15 6l-6 6 6 6"/>', right:'<path d="M9 6l6 6-6 6"/>',
+  user:'<circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',
+  mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  phone:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/>',
+  globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+  insta:'<rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17" cy="7" r=".8"/>',
+  pin:'<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  file:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/>',
+  receipt:'<path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/>',
+  link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
+  image:'<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 9"/>',
+  check:'<path d="M5 12l5 5 9-10"/>'
+};
+const icon = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${IC[n] || ''}</svg>`;
+
+let toastT;
+function toast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (type === 'err' ? ' err' : '');
+  clearTimeout(toastT);
+  toastT = setTimeout(() => { t.className = 'toast' + (type === 'err' ? ' err' : ''); }, type === 'err' ? 5500 : 2600);
+}
+async function run(fn, okMsg) {
+  try { await fn(); const m = typeof okMsg === 'function' ? okMsg() : okMsg; if (m) toast(m); return true; }
+  catch (e) { console.error(e); toast(e?.message || 'That didn’t save. Check your connection and try again.', 'err'); return false; }
+}
+async function compressImage(file, maxDim, q = 0.85) {
+  if (!file || !file.type || !file.type.startsWith('image/') || /gif|svg/.test(file.type)) return file;
+  try {
+    const bmp = await createImageBitmap(file);
+    const scale = Math.min(1, maxDim / Math.max(bmp.width, bmp.height));
+    const w = Math.round(bmp.width * scale), h = Math.round(bmp.height * scale);
+    const c = document.createElement('canvas'); c.width = w; c.height = h;
+    c.getContext('2d').drawImage(bmp, 0, 0, w, h);
+    const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', q));
+    if (!blob) return file;
+    return new File([blob], file.name.replace(/\.[^.]+$/, '') + '.jpg', {type:'image/jpeg'});
+  } catch (e) { return file; }
+}
+
+/* ---------- demo store (this browser only) ---------- */
+const DEMO_KEY = 'wedding-home-base-demo-v2';
+function emptyDb() {
+  return {settings:{names:'Natasha & Jamie', wedding_date:new Date(2027, 10, 13).toISOString(), venue_name:'The Howey Mansion', venue_city:'Howey-in-the-Hills, FL', venue_address:'The Howey Mansion, Howey-in-the-Hills, FL 34737', hero_path:null, total_budget:0, resources:[]}, vendors:[], payments:[], documents:[], images:[], files:{}};
+}
+function demoSeed() {
+  const db = emptyDb();
+  const day = n => { const d = new Date(); d.setDate(d.getDate() + n); return ymd(d); };
+  const wd = new Date(2027, 10, 13);
+  const stamp = n => new Date(Date.now() - n * 1000).toISOString();
+  db.settings = {names:'Natasha & Jamie', wedding_date: wd.toISOString(), venue_name:'The Howey Mansion', venue_city:'Howey-in-the-Hills, FL', venue_address:'The Howey Mansion, Howey-in-the-Hills, FL 34737', hero_path:null, total_budget:45000,
+    resources:[{label:'Guest list', url:'https://docs.google.com'}, {label:'Registry', url:'https://www.zola.com'}, {label:'Shared folder', url:'https://drive.google.com'}]};
+  const fl = {id:uid(), name:'Wildstem Florals', category:'Florist', contact_name:'Jordan Reyes', email:'hello@wildstem.example', phone:'(212) 555-0148', website:'wildstem.example', instagram:'@wildstemflorals', status:'booked', total_cost:6500, created_at:stamp(30)};
+  const dj = {id:uid(), name:'Night Bloom Sound', category:'DJ', contact_name:'Sam Ortiz', email:'bookings@nightbloom.example', phone:'(917) 555-0193', website:'nightbloom.example', instagram:'', status:'booked', total_cost:2400, created_at:stamp(20)};
+  const ph = {id:uid(), name:'Golden Hour Studio', category:'Photographer', contact_name:'Riley Chen', email:'riley@goldenhour.example', phone:'', website:'goldenhour.example', instagram:'@goldenhourstudio', status:'researching', total_cost:5200, created_at:stamp(10)};
+  db.vendors = [fl, dj, ph];
+  const P = (v, label, amount, due, paid, extra = {}) => ({id:uid(), vendor_id:v.id, label, amount, due_date:due, paid, paid_date: paid ? due : null, method:null, paid_by:null, receipt_path:null, created_at:stamp(5), ...extra});
+  db.payments = [
+    P(fl, 'Retainer', 1500, day(-60), true, {method:'Credit card', paid_by:'Natasha'}),
+    P(fl, 'Design deposit', 800, day(-4), false),
+    P(fl, 'Second installment', 2000, day(100), false),
+    P(fl, 'Final balance', 2200, day(225), false),
+    P(dj, 'Deposit', 600, day(-30), true, {method:'Venmo', paid_by:'Jamie'}),
+    P(dj, 'Second payment', 900, day(20), false),
+    P(dj, 'Balance', 900, day(230), false)
+  ];
+  return db;
+}
+class DemoStore {
+  constructor() {
+    this.mode = 'demo';
+    try { localStorage.setItem('__t', '1'); localStorage.removeItem('__t'); this.ok = true; } catch (e) { this.ok = false; }
+    this.db = this.load();
+  }
+  load() { if (this.ok) { try { const raw = localStorage.getItem(DEMO_KEY); if (raw) return JSON.parse(raw); } catch (e) {} } return demoSeed(); }
+  persist() {
+    if (!this.ok) return;
+    try { localStorage.setItem(DEMO_KEY, JSON.stringify(this.db)); }
+    catch (e) { this.db = this.load(); throw new Error('The demo is out of browser storage. Delete a few photos, or connect your database for full storage.'); }
+  }
+  async session() { return {email:'demo@example.com'}; }
+  async role() { return 'editor'; }
+  async signOut() {}
+  async loadAll() { const d = this.db; return JSON.parse(JSON.stringify({settings:d.settings, vendors:d.vendors, payments:d.payments, documents:d.documents, images:d.images})); }
+  url(p) { return p ? this.db.files[p] || '' : ''; }
+  async upload(file, folder) {
+    const data = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(new Error('That file couldn’t be read. Try another one.')); r.readAsDataURL(file); });
+    const path = `${folder}/${uid()}-${safeName(file.name)}`;
+    this.db.files[path] = data; return path;
+  }
+  async removeFiles(paths) { paths.filter(Boolean).forEach(p => delete this.db.files[p]); this.persist(); }
+  async saveSettings(s) { this.db.settings = {...this.db.settings, ...s}; this.persist(); }
+  _save(table, row) {
+    const list = this.db[table];
+    if (row.id) { const i = list.findIndex(x => x.id === row.id); if (i >= 0) list[i] = {...list[i], ...row}; else list.push(row); }
+    else { row = {...row, id:uid(), created_at:new Date().toISOString()}; list.push(row); }
+    this.persist(); return row;
+  }
+  async saveVendor(v) { return this._save('vendors', v); }
+  async savePayment(p) { return this._save('payments', p); }
+  async deleteVendor(id, paths) {
+    const d = this.db;
+    d.vendors = d.vendors.filter(v => v.id !== id);
+    d.payments = d.payments.filter(p => p.vendor_id !== id);
+    d.documents = d.documents.filter(x => x.vendor_id !== id);
+    d.images = d.images.filter(x => x.vendor_id !== id);
+    paths.forEach(p => delete d.files[p]); this.persist();
+  }
+  async deletePayment(p) { this.db.payments = this.db.payments.filter(x => x.id !== p.id); if (p.receipt_path) delete this.db.files[p.receipt_path]; this.persist(); }
+  async addDocument(vid, file, kind, name) { const path = await this.upload(file, `vendors/${vid}/docs`); return this._save('documents', {vendor_id:vid, kind, name, path}); }
+  async deleteDocument(doc) { this.db.documents = this.db.documents.filter(x => x.id !== doc.id); delete this.db.files[doc.path]; this.persist(); }
+  async addImage(vid, file) { const path = await this.upload(file, `vendors/${vid}/mood`); return this._save('images', {vendor_id:vid, path}); }
+  async deleteImage(img) { this.db.images = this.db.images.filter(x => x.id !== img.id); delete this.db.files[img.path]; this.persist(); }
+  reset(withSample) { this.db = withSample ? demoSeed() : emptyDb(); this.persist(); }
+}
+
+/* ---------- live store (Supabase) ---------- */
+class SupaStore {
+  constructor() {
+    this.mode = 'live';
+    this.sb = window.supabase.createClient(CONFIG.SUPABASE_URL.trim(), CONFIG.SUPABASE_KEY.trim());
+    this.urls = {}; this.signedAt = Date.now();
+  }
+  async session() { const {data} = await this.sb.auth.getSession(); return data?.session?.user || null; }
+  async role(email) {
+    const {data, error} = await this.sb.from('members').select('role').eq('email', String(email).toLowerCase()).maybeSingle();
+    if (error) throw error; return data?.role || null;
+  }
+  async signIn(email, password) {
+    const {error} = await this.sb.auth.signInWithPassword({email:email.trim(), password});
+    if (error) throw new Error(/invalid login/i.test(error.message) ? 'That password isn’t right. Try again.' : error.message);
+  }
+  async signOut() { await this.sb.auth.signOut(); }
+  async resetPassword(email) { const {error} = await this.sb.auth.resetPasswordForEmail(email, {redirectTo: location.origin + location.pathname}); if (error) throw error; }
+  async updatePassword(pw) { const {error} = await this.sb.auth.updateUser({password:pw}); if (error) throw error; }
+  async loadAll() {
+    const chk = r => { if (r.error) throw r.error; return r.data; };
+    const [s, v, p, d, i] = await Promise.all([
+      this.sb.from('settings').select('*').eq('id', 1).maybeSingle(),
+      this.sb.from('vendors').select('*').order('created_at'),
+      this.sb.from('payments').select('*').order('created_at'),
+      this.sb.from('documents').select('*').order('created_at'),
+      this.sb.from('mood_images').select('*').order('created_at', {ascending:false})
+    ]);
+    const data = {settings: chk(s) || {}, vendors: chk(v) || [], payments: chk(p) || [], documents: chk(d) || [], images: chk(i) || []};
+    data.settings.resources = data.settings.resources || [];
+    const paths = [data.settings.hero_path, ...data.payments.map(x => x.receipt_path), ...data.documents.map(x => x.path), ...data.images.map(x => x.path)].filter(Boolean);
+    await this.sign(paths);
+    return data;
+  }
+  async sign(paths) {
+    if (Date.now() - this.signedAt > 11 * 3600e3) { this.urls = {}; this.signedAt = Date.now(); }
+    const need = [...new Set(paths)].filter(p => !this.urls[p]);
+    for (let k = 0; k < need.length; k += 100) {
+      const {data, error} = await this.sb.storage.from(BUCKET).createSignedUrls(need.slice(k, k + 100), 12 * 3600);
+      if (error) { console.warn(error); continue; }
+      (data || []).forEach(x => { if (x.signedUrl && x.path) this.urls[x.path] = x.signedUrl; });
+    }
+  }
+  url(p) { return p ? this.urls[p] || '' : ''; }
+  async upload(file, folder) {
+    const path = `${folder}/${uid()}-${safeName(file.name)}`;
+    const {error} = await this.sb.storage.from(BUCKET).upload(path, file, {contentType: file.type || undefined, upsert:false});
+    if (error) throw new Error('Upload failed: ' + error.message);
+    return path;
+  }
+  async removeFiles(paths) { paths = paths.filter(Boolean); if (!paths.length) return; const {error} = await this.sb.storage.from(BUCKET).remove(paths); if (error) console.warn(error); }
+  async saveSettings(s) { const {error} = await this.sb.from('settings').upsert({id:1, ...s, updated_at:new Date().toISOString()}); if (error) throw error; }
+  async _save(table, row) {
+    row = {...row}; const id = row.id; delete row.id; delete row.created_at;
+    const q = id ? this.sb.from(table).update(row).eq('id', id) : this.sb.from(table).insert(row);
+    const {data, error} = await q.select().single();
+    if (error) throw error; return data;
+  }
+  saveVendor(v) { return this._save('vendors', v); }
+  savePayment(p) { return this._save('payments', p); }
+  async deleteVendor(id, paths) { await this.removeFiles(paths); const {error} = await this.sb.from('vendors').delete().eq('id', id); if (error) throw error; }
+  async deletePayment(p) { const {error} = await this.sb.from('payments').delete().eq('id', p.id); if (error) throw error; await this.removeFiles([p.receipt_path]); }
+  async addDocument(vid, file, kind, name) { const path = await this.upload(file, `vendors/${vid}/docs`); return this._save('documents', {vendor_id:vid, kind, name, path}); }
+  async deleteDocument(doc) { const {error} = await this.sb.from('documents').delete().eq('id', doc.id); if (error) throw error; await this.removeFiles([doc.path]); }
+  async addImage(vid, file) { const path = await this.upload(file, `vendors/${vid}/mood`); return this._save('mood_images', {vendor_id:vid, path}); }
+  async deleteImage(img) { const {error} = await this.sb.from('mood_images').delete().eq('id', img.id); if (error) throw error; await this.removeFiles([img.path]); }
+}
+
+/* ---------- calculations ---------- */
+function vendorStats(v) {
+  const ps = S.data.payments.filter(p => p.vendor_id === v.id);
+  const total = num(v.total_cost), paid = sum(ps.filter(p => p.paid));
+  return {ps, total, paid, owed: Math.max(total - paid, 0), unscheduled: Math.max(total - sum(ps), 0)};
+}
+function budgetStats() {
+  const committedV = S.data.vendors.filter(v => v.status !== 'researching');
+  const committed = sum(committedV, v => v.total_cost);
+  const paid = sum(S.data.payments.filter(p => p.paid));
+  const owed = committedV.reduce((a, v) => a + vendorStats(v).owed, 0);
+  const budget = num(S.data.settings?.total_budget);
+  return {committed, paid, owed, budget, unallocated: budget - committed};
+}
+
+/* ---------- boot and auth ---------- */
+async function boot() {
+  const configured = String(CONFIG.SUPABASE_URL || '').trim() && String(CONFIG.SUPABASE_KEY || '').trim();
+  if (configured && !window.supabase) return messageScreen('Couldn’t reach the database', 'The database library didn’t load. Check your internet connection, then refresh.');
+  S.store = configured ? new SupaStore() : new DemoStore();
+  const sync = () => { try { S.hash = location.hash; } catch (e) {} render(); };
+  window.addEventListener('hashchange', sync); window.addEventListener('popstate', sync);
+  if (S.store.mode === 'live') {
+    if (!String(CONFIG.SITE_EMAIL || '').trim()) return messageScreen('One more value needed', 'Add your email between the quotes next to SITE_EMAIL near the top of index.html, then refresh.');
+    S.store.sb.auth.onAuthStateChange(ev => { if (ev === 'PASSWORD_RECOVERY') setTimeout(() => passwordModal(true), 400); });
+    let user = null;
+    try { user = await S.store.session(); } catch (e) {}
+    if (!user) return renderLogin();
+    return afterLogin(user);
+  }
+  S.role = 'editor';
+  await refresh();
+}
+async function afterLogin(user) {
+  S.user = user; S.role = 'editor';
+  try { await refresh(); } catch (e) { showError(e); }
+}
+async function refresh() { S.data = await S.store.loadAll(); render(); }
+
+function renderLogin() {
+  S.data = null;
+  app.innerHTML = `<div class="login"><form class="login-card" id="login-form">
+    <div class="brand-lg">N + J</div>
+    <h1>Natasha &amp; Jamie</h1>
+    <p class="muted">Enter the password to open your planning home base.</p>
+    <input type="email" name="username" value="${esc(CONFIG.SITE_EMAIL)}" autocomplete="username" hidden>
+    <label class="field"><span>Password</span><input name="password" type="password" autocomplete="current-password" required autofocus></label>
+    <p class="form-err" id="login-err"></p>
+    <button class="btn btn-primary btn-block" type="submit">Open</button>
+    <button class="linkish" type="button" data-action="forgot">Forgot your password?</button>
+  </form></div>`;
+}
+function messageScreen(title, text, detail) {
+  app.innerHTML = `<div class="login"><div class="login-card"><h1>${esc(title)}</h1><p class="muted">${esc(text)}</p>${detail ? `<p class="err-detail">${esc(detail)}</p>` : ''}
+    <button class="btn btn-primary btn-block" data-action="${S.user ? 'sign-out' : 'reload'}">${S.user ? 'Sign out' : 'Refresh'}</button></div></div>`;
+}
+function renderNoAccess() {
+  messageScreen('Almost there', `You’re signed in as ${S.user.email}, but this email isn’t on the access list yet. Whoever set up the site needs to add it to the members table in Supabase.`);
+}
+function showError(e) {
+  console.error(e);
+  const msg = String(e?.message || e);
+  const hint = /relation|does not exist|schema cache|could not find/i.test(msg)
+    ? 'The database tables are missing. Run schema.sql in the Supabase SQL editor (part 2 of the setup guide), then refresh.'
+    : 'Check your connection and refresh the page.';
+  messageScreen('Your plans didn’t load', hint, msg);
+}
+
+/* ---------- rendering ---------- */
+function route() {
+  const parts = String(S.hash || '').replace(/^#\/?/, '').split('/').filter(Boolean);
+  if (parts[0] === 'vendor' && parts[1]) return {page:'vendor', id:parts[1]};
+  if (parts[0] === 'payments') return {page:'payments'};
+  if (parts[0] === 'settings') return {page:'settings'};
+  return {page:'overview'};
+}
+function render() {
+  if (!S.data) return;
+  clearInterval(S.timer);
+  const r = route();
+  const body = r.page === 'vendor' ? vendorPage(r.id) : r.page === 'payments' ? paymentsPage() : r.page === 'settings' ? settingsPage() : overviewPage();
+  const banner = S.store.mode === 'demo'
+    ? `<div class="banner">Demo mode: ${S.store.ok ? 'changes save in this browser only' : 'changes reset when you reload'}. Connect your database with the setup guide to sync your phone and computer.</div>` : '';
+  app.innerHTML = banner + navHTML(r) + `<main id="main">${body}</main>`;
+  document.querySelectorAll('[data-bg]').forEach(el => { el.style.backgroundImage = `url("${el.dataset.bg}")`; });
+  if (r.page === 'overview') startCountdown();
+  const key = S.hash;
+  if (S.lastKey !== key) { window.scrollTo(0, 0); S.lastKey = key; }
+  document.title = S.data.settings?.names ? `${S.data.settings.names}: wedding` : 'Our wedding';
+}
+
+function navHTML(r) {
+  const st = S.data.settings || {};
+  const vendors = [...S.data.vendors].sort((a, b) => a.name.localeCompare(b.name));
+  const items = vendors.map(v => `<a class="dd-item ${r.page === 'vendor' && r.id === v.id ? 'cur' : ''}" role="link" tabindex="0" data-go="#/vendor/${v.id}"><span class="dot ${esc(v.status)}"></span>${esc(v.name)}<small>${esc(v.category || '')}</small></a>`).join('')
+    || `<p class="dd-empty">No vendors yet</p>`;
+  return `<header class="nav" id="nav">
+    <a class="brand" role="link" tabindex="0" data-go="#/">${esc(initials(st.names))}</a>
+    <button class="icon-btn nav-toggle" data-action="toggle-menu" aria-label="Open menu">${icon('menu')}</button>
+    <nav class="links" aria-label="Main">
+      <a class="nl ${r.page === 'overview' ? 'active' : ''}" role="link" tabindex="0" data-go="#/">Overview</a>
+      <div class="dd">
+        <button class="nl ${r.page === 'vendor' ? 'active' : ''}" data-action="toggle-dd" aria-haspopup="true">Vendors ${icon('chev')}</button>
+        <div class="dd-menu">${items}${canEdit() ? `<button class="dd-add" data-action="add-vendor">${icon('plus')} Add vendor</button>` : ''}</div>
+      </div>
+      <a class="nl ${r.page === 'payments' ? 'active' : ''}" role="link" tabindex="0" data-go="#/payments">Payments</a>
+      ${canEdit() ? `<a class="nl ${r.page === 'settings' ? 'active' : ''}" role="link" tabindex="0" data-go="#/settings">Settings</a>` : ''}
+      ${canEdit() ? `<button class="btn btn-primary btn-sm" data-action="add-vendor">${icon('plus')} Add vendor</button>` : ''}
+    </nav>
+  </header>`;
+}
+
+function overviewPage() {
+  const st = S.data.settings || {};
+  const hero = S.store.url(st.hero_path);
+  const when = st.wedding_date ? new Date(st.wedding_date) : null;
+  const dateLine = when ? when.toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric', year:'numeric'}) + (when.getHours() || when.getMinutes() ? ' at ' + when.toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'}) : '') : '';
+  const venue = [st.venue_name, st.venue_city].filter(Boolean).join(', ');
+  const mapQ = st.venue_address || venue;
+  const units = ['days','hours','minutes','seconds'];
+  return `
+  <section class="hero ${hero ? 'has-photo' : ''}" ${hero ? `data-bg="${esc(hero)}"` : ''}>
+    <div class="hero-inner">
+      <h1>${esc(st.names || 'Your names')}</h1>
+      ${dateLine ? `<p class="when">${esc(dateLine)}</p>` : ''}
+      ${venue ? `<p class="where"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQ)}" target="_blank" rel="noopener">${icon('pin')} ${esc(venue)}</a></p>` : ''}
+      ${when ? `<div class="countdown" id="countdown">${units.map(u => `<div class="cd"><b data-cd="${u}">0</b><span>${u}</span></div>`).join('')}</div>` : ''}
+      ${!st.names && !when && canEdit() ? `<a class="btn btn-light" role="link" tabindex="0" data-go="#/settings">Add your wedding details</a>` : ''}
+    </div>
+  </section>
+  ${budgetBlock()}
+  <section class="block two">
+    ${upcomingCard()}
+    ${resourcesCard()}
+  </section>
+  <section class="block">
+    <div class="sec-head"><h2>Mood board</h2></div>
+    ${S.data.images.length ? boardHTML([...S.data.images].sort(byNewest)) : `<div class="empty">Photos you add on each vendor’s page appear here together.</div>`}
+  </section>`;
+}
+function startCountdown() {
+  const st = S.data.settings; if (!st?.wedding_date) return;
+  const target = new Date(st.wedding_date).getTime();
+  const tick = () => {
+    const box = document.getElementById('countdown');
+    if (!box) return clearInterval(S.timer);
+    let ms = target - Date.now();
+    if (ms <= 0) { box.innerHTML = '<p class="married">Just married</p>'; return clearInterval(S.timer); }
+    const d = Math.floor(ms / 864e5); ms -= d * 864e5;
+    const h = Math.floor(ms / 36e5); ms -= h * 36e5;
+    const m = Math.floor(ms / 6e4); const s = Math.floor((ms - m * 6e4) / 1000);
+    const v = {days:d, hours:h, minutes:m, seconds:s};
+    box.querySelectorAll('[data-cd]').forEach(b => { b.textContent = v[b.dataset.cd]; });
+  };
+  tick(); S.timer = setInterval(tick, 1000);
+}
+function budgetBlock() {
+  const b = budgetStats();
+  const base = Math.max(b.budget, b.committed, 1);
+  const pct = x => Math.max(0, Math.min(100, x / base * 100)).toFixed(2);
+  const over = b.budget > 0 && b.committed > b.budget;
+  return `<section class="block">
+    <div class="sec-head"><h2>Budget</h2>${canEdit() ? `<a class="btn btn-ghost btn-sm" role="link" tabindex="0" data-go="#/settings">Edit total budget</a>` : ''}</div>
+    <div class="metrics">
+      <div class="metric m-cream"><div class="lbl">Total budget</div><div class="val">${b.budget ? money(b.budget) : 'Not set'}</div></div>
+      <div class="metric m-olive"><div class="lbl">Committed</div><div class="val">${money(b.committed)}</div><div class="hint">Booked vendors</div></div>
+      <div class="metric m-sage"><div class="lbl">Paid</div><div class="val">${money(b.paid)}</div></div>
+      <div class="metric m-apricot"><div class="lbl">Still owed</div><div class="val">${money(b.owed)}</div></div>
+    </div>
+    <div class="bar" role="img" aria-label="${esc(`${money(b.paid)} paid and ${money(b.owed)} owed`)}"><span style="width:${pct(b.paid)}%;background:var(--sage)"></span><span style="width:${pct(b.owed)}%;background:var(--apricot)"></span></div>
+    <div class="legend">
+      <span><i style="background:var(--sage)"></i>${money(b.paid)} paid</span>
+      <span><i style="background:var(--apricot)"></i>${money(b.owed)} owed</span>
+      ${b.budget ? (over ? `<span class="over">${money(b.committed - b.budget)} over budget</span>` : `<span><i style="background:var(--cream)"></i>${money(b.unallocated)} not yet allocated</span>`) : ''}
+    </div>
+  </section>`;
+}
+function payChip(p) {
+  const st = payState(p);
+  if (st === 'paid') return `<span class="chip c-paid">Paid</span>`;
+  if (st === 'overdue') return `<span class="chip c-overdue">Overdue</span>`;
+  return `<span class="chip c-${st}">${p.due_date ? fmtDate(p.due_date) : 'No date'}</span>`;
+}
+function payRow(p, vmap, withMeta) {
+  const v = vmap[p.vendor_id]; const st = payState(p);
+  let sub = esc(p.label || 'Payment');
+  if (st === 'overdue') sub += `, was due ${fmtDate(p.due_date)}`;
+  if (withMeta && p.paid) sub += [p.paid_date ? fmtDate(p.paid_date) : '', p.method, p.paid_by ? 'by ' + p.paid_by : ''].filter(Boolean).map(x => ', ' + esc(x)).join('');
+  return `<a class="row" role="link" tabindex="0" data-go="#/vendor/${esc(p.vendor_id)}"><div class="row-main">${payChip(p)}<div><div class="row-name">${esc(v?.name || 'Vendor')}</div><div class="sub">${sub}</div></div></div><span class="amt">${money(p.amount)}</span></a>`;
+}
+function upcomingCard() {
+  const vmap = vendorMap();
+  const list = sortPayments(S.data.payments.filter(p => !p.paid)).sort((a, b) => (payState(a) === 'overdue' ? 0 : 1) - (payState(b) === 'overdue' ? 0 : 1)).slice(0, 6);
+  return `<div class="card">
+    <div class="card-head"><h3>Upcoming payments</h3><a class="btn btn-ghost btn-sm" role="link" tabindex="0" data-go="#/payments">See all</a></div>
+    ${list.length ? list.map(p => payRow(p, vmap)).join('') : `<p class="muted small">Nothing due right now. Payments you add on vendor pages appear here.</p>`}
+  </div>`;
+}
+function resourcesCard() {
+  const res = (S.data.settings?.resources || []).filter(r => r.url);
+  const tones = ['t-blush','t-cream','t-olive','t-marigold'];
+  return `<div class="card">
+    <div class="card-head"><h3>Resources</h3>${canEdit() ? `<a class="icon-btn" role="link" tabindex="0" data-go="#/settings" aria-label="Edit resource links">${icon('edit')}</a>` : ''}</div>
+    ${res.length ? res.map((r, i) => `<a class="res ${tones[i % 4]}" href="${esc(normUrl(r.url))}" target="_blank" rel="noopener">${icon('link')}<span>${esc(r.label || r.url)}</span></a>`).join('')
+      : `<p class="muted small">${canEdit() ? 'Add links to your guest list, registry, and shared folders in settings.' : 'No links yet.'}</p>`}
+  </div>`;
+}
+function boardHTML(images) {
+  return `<div class="board">${images.map(img => {
+    const u = S.store.url(img.path); if (!u) return '';
+    return `<figure class="pin" data-action="open-image" data-id="${esc(img.id)}" tabindex="0" aria-label="Open photo"><img src="${esc(u)}" alt="Mood board photo" loading="lazy">${canEdit() ? `<button class="del" data-action="delete-image" data-id="${esc(img.id)}" aria-label="Delete photo">${icon('x')}</button>` : ''}</figure>`;
+  }).join('')}</div>`;
+}
+
+function vendorPage(id) {
+  const v = findBy('vendors', id);
+  if (!v) return `<div class="empty-page"><h1>Vendor not found</h1><p>It may have been deleted.</p><a class="btn btn-primary" role="link" tabindex="0" data-go="#/">Back to overview</a></div>`;
+  const s = vendorStats(v);
+  const docs = S.data.documents.filter(d => d.vendor_id === id);
+  const imgs = S.data.images.filter(i => i.vendor_id === id).sort(byNewest);
+  const contact = [];
+  if (v.contact_name) contact.push(`<div class="ci">${icon('user')}<span>${esc(v.contact_name)}</span></div>`);
+  if (v.email) contact.push(`<a class="ci" href="mailto:${esc(v.email)}">${icon('mail')}<span>${esc(v.email)}</span></a>`);
+  if (v.phone) contact.push(`<a class="ci" href="tel:${esc(String(v.phone).replace(/[^\d+]/g, ''))}">${icon('phone')}<span>${esc(v.phone)}</span></a>`);
+  if (v.website) contact.push(`<a class="ci" href="${esc(normUrl(v.website))}" target="_blank" rel="noopener">${icon('globe')}<span>${esc(String(v.website).replace(/^https?:\/\//, '').replace(/\/$/, ''))}</span></a>`);
+  if (v.instagram) contact.push(`<a class="ci" href="${esc(igUrl(v.instagram))}" target="_blank" rel="noopener">${icon('insta')}<span>${esc(v.instagram.startsWith('@') || /instagram/i.test(v.instagram) ? v.instagram : '@' + v.instagram)}</span></a>`);
+  const paidPct = s.total ? Math.min(100, s.paid / s.total * 100).toFixed(2) : 0;
+  return `
+  <section class="v-head">
+    <div class="v-meta">${v.category ? `<span class="chip c-cat">${esc(v.category)}</span>` : ''}<span class="chip st-${esc(v.status)}">${STATUSES[v.status] || 'Researching'}</span></div>
+    <div class="v-title"><h1>${esc(v.name)}</h1>
+      ${canEdit() ? `<div class="v-actions"><button class="btn btn-ghost btn-sm" data-action="edit-vendor" data-id="${esc(v.id)}">${icon('edit')} Edit details</button><button class="icon-btn" data-action="delete-vendor" data-id="${esc(v.id)}" aria-label="Delete vendor">${icon('trash')}</button></div>` : ''}
+    </div>
+  </section>
+  <section class="two even">
+    <div class="card cream"><div class="card-head"><h3>Details</h3></div>
+      ${contact.length ? contact.join('') : `<p class="small" style="color:var(--cream-ink)">No contact details yet.${canEdit() ? ' Use “Edit details” to add them.' : ''}</p>`}
+    </div>
+    <div class="card"><div class="card-head"><h3>Budget</h3></div>
+      <div class="mini"><div><span>Total</span><b>${money(s.total)}</b></div><div><span>Paid</span><b class="g">${money(s.paid)}</b></div><div><span>Owed</span><b class="o">${money(s.owed)}</b></div></div>
+      <div class="bar"><span style="width:${paidPct}%;background:var(--sage)"></span></div>
+      ${!s.total ? `<p class="note">Add the total cost to track what you owe.</p>` : s.unscheduled > 0 ? `<p class="note">${money(s.unscheduled)} isn’t scheduled yet. Add payments to plan it out.</p>` : ''}
+    </div>
+  </section>
+  <section class="two even">
+    <div class="card"><div class="card-head"><h3>Payment timeline</h3>${canEdit() ? `<button class="btn btn-ghost btn-sm" data-action="add-payment" data-vendor="${esc(v.id)}">${icon('plus')} Add payment</button>` : ''}</div>
+      ${timelineHTML(s.ps)}
+    </div>
+    <div class="card blush"><div class="card-head"><h3>Documents</h3></div>
+      ${docs.map(d => `<div class="doc">${icon(d.kind === 'invoice' ? 'receipt' : 'file')}<a ${fileAttrs(S.store.url(d.path), d.name)}>${esc(d.name)}</a><span class="k">${DOC_KINDS[d.kind] || 'Other'}</span>${canEdit() ? `<button class="icon-btn sm" data-action="delete-doc" data-id="${esc(d.id)}" aria-label="Delete ${esc(d.name)}">${icon('trash')}</button>` : ''}</div>`).join('')
+        || `<p class="small" style="color:var(--blush-ink);margin-bottom:10px">No contracts or invoices yet.</p>`}
+      ${canEdit() ? `<button class="upload-slot" data-action="upload-doc" data-vendor="${esc(v.id)}">${icon('upload')} Upload a contract or invoice</button>` : ''}
+    </div>
+  </section>
+  <section class="block">
+    <div class="sec-head"><h2>Mood board</h2>${canEdit() && imgs.length ? `<button class="btn btn-primary btn-sm" data-action="pick-photos">${icon('image')} Add photos</button>` : ''}</div>
+    <div data-drop="${canEdit() ? esc(v.id) : ''}">
+      ${imgs.length ? boardHTML(imgs) : canEdit()
+        ? `<button class="empty drop" data-action="pick-photos">${icon('image')}<strong>Add your first photos</strong><span>Drop images here, or choose them from your device</span></button>`
+        : `<div class="empty">No photos yet.</div>`}
+    </div>
+    ${canEdit() ? `<input type="file" id="mood-input" accept="image/*" multiple hidden data-vendor="${esc(v.id)}">` : ''}
+  </section>`;
+}
+function timelineHTML(ps) {
+  const sorted = sortPayments(ps);
+  if (!sorted.length) return `<p class="muted small">No payments yet.${canEdit() ? ' Add each deposit and installment with its due date.' : ''}</p>`;
+  let nextMarked = false;
+  return `<div class="timeline">${sorted.map(p => {
+    const st = payState(p);
+    let cls = st === 'paid' ? 'paid' : st === 'overdue' ? 'overdue' : 'later';
+    if (cls === 'later' && !nextMarked) { cls = 'next'; nextMarked = true; }
+    const sub = p.paid
+      ? `Paid ${fmtDate(p.paid_date || p.due_date, true)}${p.method ? ', ' + esc(p.method) : ''}${p.paid_by ? ', by ' + esc(p.paid_by) : ''}`
+      : st === 'overdue' ? `Overdue, was due ${fmtDate(p.due_date, true)}` : p.due_date ? `Due ${fmtDate(p.due_date, true)}` : 'No due date';
+    const rec = p.receipt_path ? S.store.url(p.receipt_path) : '';
+    const actions = [
+      rec ? `<a class="mini-link" ${fileAttrs(rec, 'receipt')}>${icon('receipt')} Receipt</a>` : '',
+      canEdit() && !p.paid ? `<button class="mini-link" data-action="mark-paid" data-id="${esc(p.id)}">${icon('check')} Mark paid</button>` : '',
+      canEdit() ? `<button class="mini-link" data-action="edit-payment" data-id="${esc(p.id)}">${icon('edit')} Edit</button>` : ''
+    ].join('');
+    return `<div class="tl ${cls}"><div class="tl-top"><span>${esc(p.label || 'Payment')}</span><span class="amt">${money(p.amount)}</span></div>
+      <div class="sub ${cls === 'overdue' ? 'sub-over' : ''}">${sub}</div>${actions ? `<div class="tl-actions">${actions}</div>` : ''}</div>`;
+  }).join('')}</div>`;
+}
+
+function paymentsPage() {
+  const ps = S.data.payments; const vmap = vendorMap();
+  const overdue = sortPayments(ps.filter(p => payState(p) === 'overdue'));
+  const upcoming = sortPayments(ps.filter(p => !p.paid && payState(p) !== 'overdue'));
+  const paid = ps.filter(p => p.paid).sort((a, b) => String(b.paid_date || '').localeCompare(String(a.paid_date || '')));
+  const soon = upcoming.filter(p => payState(p) === 'soon');
+  const list = (title, items, meta) => items.length ? `<div class="card"><div class="card-head"><h3>${title}</h3></div>${items.map(p => payRow(p, vmap, meta)).join('')}</div>` : '';
+  return `
+  <section class="page-head"><h1>Payments</h1></section>
+  <div class="metrics">
+    <div class="metric m-sage"><div class="lbl">Paid so far</div><div class="val">${money(sum(paid))}</div><div class="hint">${paid.length} payment${paid.length === 1 ? '' : 's'}</div></div>
+    <div class="metric m-marigold"><div class="lbl">Due in the next 30 days</div><div class="val">${money(sum(soon))}</div><div class="hint">${soon.length} payment${soon.length === 1 ? '' : 's'}</div></div>
+    <div class="metric ${overdue.length ? 'm-rose' : 'm-cream'}"><div class="lbl">Overdue</div><div class="val">${money(sum(overdue))}</div><div class="hint">${overdue.length ? overdue.length + ' to catch up on' : 'All caught up'}</div></div>
+  </div>
+  <section class="block">${calendarHTML()}</section>
+  <section class="block cards">
+    ${ps.length ? list('Overdue', overdue) + list('Upcoming', upcoming) + list('Paid', paid, true)
+      : `<div class="empty">Add payments on each vendor’s page and they’ll all collect here, with due dates on the calendar.</div>`}
+  </section>`;
+}
+function calendarHTML() {
+  const now = new Date(); const c = S.cal || {y:now.getFullYear(), m:now.getMonth()};
+  const first = new Date(c.y, c.m, 1);
+  const start = new Date(c.y, c.m, 1 - first.getDay());
+  const daysIn = new Date(c.y, c.m + 1, 0).getDate();
+  const cells = Math.ceil((first.getDay() + daysIn) / 7) * 7;
+  const byDate = {};
+  S.data.payments.forEach(p => { const d = p.paid ? (p.paid_date || p.due_date) : p.due_date; if (d) (byDate[d.slice(0, 10)] = byDate[d.slice(0, 10)] || []).push(p); });
+  const vmap = vendorMap(); const t = todayStr();
+  let html = '';
+  for (let i = 0; i < cells; i++) {
+    const d = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i); const k = ymd(d);
+    html += `<div class="day ${d.getMonth() !== c.m ? 'out' : ''} ${k === t ? 'today' : ''}"><span class="n">${d.getDate()}</span>${(byDate[k] || []).map(p => {
+      const name = vmap[p.vendor_id]?.name || 'Payment';
+      return `<a class="ev c-${payState(p)}" role="link" tabindex="0" data-go="#/vendor/${esc(p.vendor_id)}" title="${esc(`${name}: ${p.label || 'Payment'}, ${money(p.amount)}`)}">${esc(name)} ${money(p.amount)}</a>`;
+    }).join('')}</div>`;
+  }
+  return `<div class="card">
+    <div class="card-head"><h3>${first.toLocaleDateString('en-US', {month:'long', year:'numeric'})}</h3>
+      <div class="cal-nav"><button class="icon-btn" data-action="cal-prev" aria-label="Previous month">${icon('left')}</button><button class="btn btn-ghost btn-sm" data-action="cal-today">Today</button><button class="icon-btn" data-action="cal-next" aria-label="Next month">${icon('right')}</button></div>
+    </div>
+    <div class="cal">${['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(w => `<div class="wd">${w}</div>`).join('')}${html}</div>
+    <div class="legend"><span><i style="background:var(--rose)"></i>Overdue</span><span><i style="background:var(--marigold)"></i>Due within 30 days</span><span><i style="background:var(--blush)"></i>Later</span><span><i style="background:#DCE4D6"></i>Paid</span></div>
+  </div>`;
+}
+function shiftCal(n) { const now = new Date(); const c = S.cal || {y:now.getFullYear(), m:now.getMonth()}; const d = new Date(c.y, c.m + n, 1); S.cal = {y:d.getFullYear(), m:d.getMonth()}; render(); }
+
+function toLocalInput(iso) { if (!iso) return ''; const d = new Date(iso); return `${ymd(d)}T${pad(d.getHours())}:${pad(d.getMinutes())}`; }
+function resRow(r) {
+  return `<div class="res-row"><input name="res_label" placeholder="Guest list" value="${esc(r.label || '')}" aria-label="Link name"><input name="res_url" placeholder="docs.google.com/spreadsheets/…" value="${esc(r.url || '')}" aria-label="Link address" inputmode="url" autocapitalize="off"><button type="button" class="icon-btn" data-action="remove-resource" aria-label="Remove link">${icon('x')}</button></div>`;
+}
+function settingsPage() {
+  if (!canEdit()) return `<div class="empty-page"><h1>Settings</h1><p>Only editors can change settings.</p><a class="btn btn-primary" role="link" tabindex="0" data-go="#/">Back to overview</a></div>`;
+  const st = S.data.settings || {}; const hero = S.store.url(st.hero_path);
+  return `
+  <section class="page-head"><h1>Settings</h1></section>
+  <div class="card settings" style="margin-bottom:20px">
+    <div class="card-head"><h3>Hero photo</h3></div>
+    ${hero ? `<img class="hero-prev" src="${esc(hero)}" alt="Current hero photo">` : `<div class="hero-prev empty-prev">No photo yet. The header stays sage green until you add one.</div>`}
+    <div class="btn-row"><button type="button" class="btn btn-primary btn-sm" data-action="pick-hero">${icon('upload')} ${hero ? 'Replace photo' : 'Upload photo'}</button>${hero ? `<button type="button" class="btn btn-ghost btn-sm" data-action="remove-hero">Remove photo</button>` : ''}</div>
+    <input type="file" id="hero-input" accept="image/*" hidden>
+  </div>
+  <form id="settings-form" class="settings">
+    <div class="card">
+      <div class="card-head"><h3>Wedding details</h3></div>
+      <label class="field"><span>Your names</span><input name="names" value="${esc(st.names || '')}" placeholder="Alex & Bailey"><span class="hint-t">Put “&” between your names to show your initials in the menu.</span></label>
+      <div class="grid2">
+        <label class="field"><span>Date and ceremony time</span><input type="datetime-local" name="wedding_date" value="${esc(toLocalInput(st.wedding_date))}"></label>
+        <label class="field"><span>Total budget</span><input type="number" name="total_budget" min="0" step="1" inputmode="numeric" value="${st.total_budget ? esc(st.total_budget) : ''}" placeholder="45000"></label>
+      </div>
+      <div class="grid2">
+        <label class="field"><span>Venue</span><input name="venue_name" value="${esc(st.venue_name || '')}" placeholder="The Glasshouse"></label>
+        <label class="field"><span>City</span><input name="venue_city" value="${esc(st.venue_city || '')}" placeholder="Hudson Valley, NY"></label>
+      </div>
+      <label class="field"><span>Venue address</span><input name="venue_address" value="${esc(st.venue_address || '')}" placeholder="12 Orchard Lane, Hudson, NY"><span class="hint-t">Used for the map link on the overview.</span></label>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>Resource links</h3><button type="button" class="btn btn-ghost btn-sm" data-action="add-resource">${icon('plus')} Add link</button></div>
+      <div id="res-list">${(st.resources || []).length ? st.resources.map(resRow).join('') : resRow({})}</div>
+    </div>
+    <div class="save-bar"><button type="submit" class="btn btn-primary">Save changes</button></div>
+  </form>
+  ${S.store.mode === 'live' ? `<div class="card" style="margin-top:28px">
+    <div class="card-head"><h3>Password</h3></div>
+    <p class="muted small">This device stays unlocked until you lock it. Lock it on any computer that isn’t yours.</p>
+    <div class="btn-row"><button class="btn btn-ghost btn-sm" data-action="change-password">Change password</button><button class="btn btn-ghost btn-sm" data-action="sign-out">Lock this device</button></div>
+  </div>` : ''}
+  ${S.store.mode === 'demo' ? `<div class="card" style="margin-top:28px">
+    <div class="card-head"><h3>Demo data</h3></div>
+    <p class="muted small">Try everything here first. Nothing you enter in demo mode moves to your real site.</p><div class="btn-row"><button class="btn btn-ghost btn-sm" data-action="reset-demo">Restore sample data</button><button class="btn btn-ghost btn-sm" data-action="clear-demo">Start with a blank demo</button></div>
+  </div>` : ''}`;
+}
+
+/* ---------- modals ---------- */
+function openModal(o) {
+  const root = document.getElementById('modal-root');
+  const bg = document.createElement('div'); bg.className = 'modal-bg';
+  bg.innerHTML = o.bare ? o.body : `<form class="modal" role="dialog" aria-modal="true" aria-label="${esc(o.title)}">
+    <div class="modal-head"><h2>${esc(o.title)}</h2><button type="button" class="icon-btn" data-close aria-label="Close">${icon('x')}</button></div>
+    <div class="modal-body">${o.body}</div>
+    <div class="modal-foot">${o.danger ? `<button type="button" class="btn-text-danger" data-danger>${esc(o.danger.label)}</button>` : ''}
+      <div class="foot-r"><button type="button" class="btn btn-ghost" data-close>Cancel</button>${o.onSubmit ? `<button type="submit" class="btn ${o.submitDanger ? 'btn-danger' : 'btn-primary'}">${esc(o.submitLabel || 'Save')}</button>` : ''}</div>
+    </div></form>`;
+  root.appendChild(bg); document.body.classList.add('modal-open');
+  let closed = false;
+  const close = () => { if (closed) return; closed = true; bg.remove(); if (!root.children.length) document.body.classList.remove('modal-open'); o.onClose?.(); };
+  bg.addEventListener('click', e => { if (e.target === bg || e.target.closest('[data-close]')) close(); });
+  const form = bg.querySelector('form');
+  if (form) {
+    form.addEventListener('submit', async e => {
+      e.preventDefault(); e.stopPropagation();
+      const btn = form.querySelector('[type=submit]'); const label = btn.textContent;
+      btn.disabled = true; btn.textContent = 'Saving…';
+      const res = await o.onSubmit(new FormData(form), form);
+      if (res === false) { btn.disabled = false; btn.textContent = label; } else close();
+    });
+    bg.querySelector('[data-danger]')?.addEventListener('click', async () => { const r = await o.danger.fn(); if (r !== false) close(); });
+    setTimeout(() => form.querySelector('input:not([type=checkbox]):not([type=file]),select')?.focus({preventScroll:true}), 60);
+  }
+  o.onOpen?.(bg);
+  return {close, el:bg};
+}
+function confirmDialog(title, text, label = 'Delete') {
+  return new Promise(res => {
+    let done = false;
+    openModal({title, body:`<p class="muted">${esc(text)}</p>`, submitLabel:label, submitDanger: label === 'Delete',
+      onSubmit: async () => { done = true; res(true); }, onClose: () => { if (!done) res(false); }});
+  });
+}
+function vendorModal(v) {
+  const isNew = !v; v = v || {status:'researching'};
+  const f = (name, label, type = 'text', ph = '') => `<label class="field"><span>${label}</span><input name="${name}" type="${type}" value="${esc(v[name] ?? '')}" placeholder="${esc(ph)}"${type === 'email' || type === 'url' ? ' autocapitalize="off"' : ''}></label>`;
+  openModal({
+    title: isNew ? 'Add vendor' : 'Edit details', submitLabel: isNew ? 'Add vendor' : 'Save changes',
+    body: `<label class="field"><span>Vendor name</span><input name="name" required value="${esc(v.name || '')}" placeholder="Wildstem Florals"></label>
+      <div class="grid2">
+        <label class="field"><span>Category</span><input name="category" list="cat-list" value="${esc(v.category || '')}" placeholder="Florist"><datalist id="cat-list">${CATEGORIES.map(c => `<option value="${c}">`).join('')}</datalist></label>
+        <label class="field"><span>Status</span><select name="status">${Object.entries(STATUSES).map(([k, l]) => `<option value="${k}" ${v.status === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+      </div>
+      <label class="field"><span>Total cost</span><input name="total_cost" type="number" min="0" step="0.01" inputmode="decimal" value="${v.total_cost ? esc(v.total_cost) : ''}" placeholder="6500"></label>
+      <div class="grid2">${f('contact_name', 'Contact person', 'text', 'Jordan Reyes')}${f('phone', 'Phone', 'tel', '(212) 555-0148')}</div>
+      ${f('email', 'Email', 'email', 'hello@wildstem.co')}
+      <div class="grid2">${f('website', 'Website', 'text', 'wildstem.co')}${f('instagram', 'Instagram', 'text', '@wildstemflorals')}</div>`,
+    onSubmit: async fd => {
+      const t = k => String(fd.get(k) || '').trim() || null;
+      const row = {...(isNew ? {} : v), name:t('name'), category:t('category'), status:fd.get('status'), total_cost:num(fd.get('total_cost')),
+        contact_name:t('contact_name'), email:t('email'), phone:t('phone'), website:t('website'), instagram:t('instagram')};
+      let saved;
+      const ok = await run(async () => { saved = await S.store.saveVendor(row); await refresh(); }, isNew ? 'Vendor added' : 'Changes saved');
+      if (!ok) return false;
+      if (isNew && saved) go('#/vendor/' + saved.id);
+    }
+  });
+}
+function paymentModal(p, opt = {}) {
+  const isNew = !p; p = p || {vendor_id: opt.vendorId, paid:false};
+  const paid = opt.markPaid || !!p.paid;
+  const payers = [...new Set([...splitNames(S.data.settings?.names), 'Both of us', 'Parents', ...S.data.payments.map(x => x.paid_by).filter(Boolean)])];
+  const rec = p.receipt_path ? S.store.url(p.receipt_path) : '';
+  openModal({
+    title: isNew ? 'Add payment' : opt.markPaid ? 'Mark as paid' : 'Edit payment', submitLabel: isNew ? 'Add payment' : 'Save payment',
+    body: `<label class="field"><span>What it’s for</span><input name="label" required value="${esc(p.label || '')}" placeholder="Deposit"></label>
+      <div class="grid2">
+        <label class="field"><span>Amount</span><input name="amount" type="number" min="0" step="0.01" inputmode="decimal" required value="${p.amount ?? ''}" placeholder="800"></label>
+        <label class="field"><span>Due date</span><input name="due_date" type="date" value="${esc(p.due_date || '')}"></label>
+      </div>
+      <label class="check"><input type="checkbox" name="paid" id="paid-toggle" ${paid ? 'checked' : ''}> This payment has been made</label>
+      <div class="paid-box" id="paid-fields" ${paid ? '' : 'hidden'}>
+        <div class="grid2">
+          <label class="field"><span>Date paid</span><input name="paid_date" type="date" value="${esc(p.paid_date || todayStr())}"></label>
+          <label class="field"><span>Payment method</span><select name="method"><option value="">Choose one</option>${METHODS.map(m => `<option ${p.method === m ? 'selected' : ''}>${m}</option>`).join('')}</select></label>
+        </div>
+        <label class="field"><span>Who paid</span><input name="paid_by" list="payer-list" value="${esc(p.paid_by || '')}" placeholder="Both of us"><datalist id="payer-list">${payers.map(x => `<option value="${esc(x)}">`).join('')}</datalist></label>
+        <div class="field"><span>Receipt</span>
+          ${rec ? `<div class="cur-file"><a ${fileAttrs(rec, 'receipt')}>View current receipt</a><label class="check sm"><input type="checkbox" name="remove_receipt"> Remove</label></div>` : ''}
+          <input type="file" name="receipt" accept="image/*,application/pdf">
+        </div>
+      </div>`,
+    danger: isNew ? null : {label:'Delete payment', fn: async () => {
+      if (!await confirmDialog('Delete this payment?', 'It will be removed from the timeline and the budget.')) return false;
+      return (await run(async () => { await S.store.deletePayment(p); await refresh(); }, 'Payment deleted')) ? undefined : false;
+    }},
+    onOpen: m => { m.querySelector('#paid-toggle').addEventListener('change', e => { m.querySelector('#paid-fields').hidden = !e.target.checked; }); },
+    onSubmit: async fd => {
+      const isPaid = fd.get('paid') === 'on';
+      const row = {...(isNew ? {} : p), vendor_id:p.vendor_id, label:String(fd.get('label')).trim(), amount:num(fd.get('amount')), due_date:fd.get('due_date') || null, paid:isPaid,
+        paid_date: isPaid ? (fd.get('paid_date') || todayStr()) : null, method: isPaid ? (fd.get('method') || null) : null,
+        paid_by: isPaid ? (String(fd.get('paid_by') || '').trim() || null) : null};
+      let msg = isNew ? 'Payment added' : 'Payment saved';
+      const ok = await run(async () => {
+        const file = fd.get('receipt'); const old = p.receipt_path || null; let toRemove = null;
+        if (isPaid && file && file.size) {
+          const f = file.type.startsWith('image/') ? await compressImage(file, imgMax()) : file;
+          row.receipt_path = await S.store.upload(f, `vendors/${p.vendor_id}/receipts`);
+          toRemove = old;
+        } else if (old && (!isPaid || fd.get('remove_receipt') === 'on')) { row.receipt_path = null; toRemove = old; }
+        await S.store.savePayment(row);
+        if (toRemove) await S.store.removeFiles([toRemove]);
+        await refresh();
+        const v = findBy('vendors', row.vendor_id);
+        if (v) { const s = vendorStats(v); if (s.total > 0 && s.paid >= s.total && v.status !== 'paid') { await S.store.saveVendor({...v, status:'paid'}); await refresh(); msg = 'All paid. Marked paid in full'; } }
+      }, () => msg);
+      return ok ? undefined : false;
+    }
+  });
+}
+function docModal(vid) {
+  openModal({
+    title:'Upload a document', submitLabel:'Upload',
+    body:`<div class="field"><span>File</span><input type="file" name="file" required accept=".pdf,image/*,.doc,.docx"></div>
+      <div class="grid2">
+        <label class="field"><span>Type</span><select name="kind">${Object.entries(DOC_KINDS).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
+        <label class="field"><span>Name (optional)</span><input name="name" placeholder="Signed contract"></label>
+      </div>`,
+    onSubmit: async fd => {
+      const f = fd.get('file');
+      if (!f || !f.size) { toast('Choose a file to upload.', 'err'); return false; }
+      const name = String(fd.get('name') || '').trim() || f.name;
+      return (await run(async () => { await S.store.addDocument(vid, f, fd.get('kind'), name); await refresh(); }, 'Document uploaded')) ? undefined : false;
+    }
+  });
+}
+function passwordModal(recovery) {
+  openModal({
+    title: recovery ? 'Set a new password' : 'Change password', submitLabel:'Save password',
+    body:`<label class="field"><span>New password</span><input type="password" name="pw" minlength="8" required autocomplete="new-password"></label>
+      <label class="field"><span>Confirm new password</span><input type="password" name="pw2" minlength="8" required autocomplete="new-password"></label>`,
+    onSubmit: async fd => {
+      if (fd.get('pw') !== fd.get('pw2')) { toast('Those passwords don’t match.', 'err'); return false; }
+      return (await run(() => S.store.updatePassword(fd.get('pw')), 'Password saved')) ? undefined : false;
+    }
+  });
+}
+function openImage(id) {
+  const img = findBy('images', id); if (!img) return;
+  const v = findBy('vendors', img.vendor_id);
+  openModal({bare:true, body:`<div class="lightbox" data-close><img src="${esc(S.store.url(img.path))}" alt="Mood board photo">${v && route().page !== 'vendor' ? `<a class="lb-tag" role="link" tabindex="0" data-go="#/vendor/${esc(v.id)}">${esc(v.name)}</a>` : ''}</div>`});
+}
+
+/* ---------- uploads ---------- */
+async function uploadImages(vid, files) {
+  const list = [...files].filter(f => /^image\//.test(f.type) || /\.(heic|heif)$/i.test(f.name));
+  if (!list.length) return toast('Choose image files to add.', 'err');
+  toast(`Adding ${list.length} photo${list.length > 1 ? 's' : ''}…`);
+  await run(async () => { for (const f of list) await S.store.addImage(vid, await compressImage(f, imgMax())); await refresh(); }, list.length > 1 ? 'Photos added' : 'Photo added');
+}
+async function uploadHero(file) {
+  toast('Uploading photo…');
+  await run(async () => {
+    const f = await compressImage(file, S.store.mode === 'demo' ? 1400 : 2400, 0.86);
+    const path = await S.store.upload(f, 'settings');
+    const old = S.data.settings?.hero_path;
+    await S.store.saveSettings({hero_path:path});
+    if (old) await S.store.removeFiles([old]);
+    await refresh();
+  }, 'Hero photo updated');
+}
+
+/* ---------- events ---------- */
+function closeMenus() { document.querySelectorAll('.dd.open').forEach(d => d.classList.remove('open')); document.getElementById('nav')?.classList.remove('open'); }
+const ACTIONS = {
+  'reload': () => location.reload(),
+  'toggle-menu': () => document.getElementById('nav')?.classList.toggle('open'),
+  'toggle-dd': el => el.closest('.dd').classList.toggle('open'),
+  'add-vendor': () => { closeMenus(); vendorModal(); },
+  'edit-vendor': el => vendorModal(findBy('vendors', el.dataset.id)),
+  'delete-vendor': async el => {
+    const v = findBy('vendors', el.dataset.id); if (!v) return;
+    if (!await confirmDialog(`Delete ${v.name}?`, 'This removes the vendor along with its payments, documents, and photos. It can’t be undone.')) return;
+    const paths = [...S.data.payments.filter(p => p.vendor_id === v.id).map(p => p.receipt_path), ...S.data.documents.filter(d => d.vendor_id === v.id).map(d => d.path), ...S.data.images.filter(i => i.vendor_id === v.id).map(i => i.path)].filter(Boolean);
+    await run(async () => { await S.store.deleteVendor(v.id, paths); S.hash = '#/'; try { history.replaceState(null, '', '#/'); } catch (e) {} await refresh(); }, 'Vendor deleted');
+  },
+  'add-payment': el => paymentModal(null, {vendorId: el.dataset.vendor}),
+  'edit-payment': el => paymentModal(findBy('payments', el.dataset.id)),
+  'mark-paid': el => paymentModal(findBy('payments', el.dataset.id), {markPaid:true}),
+  'upload-doc': el => docModal(el.dataset.vendor),
+  'delete-doc': async el => {
+    const d = findBy('documents', el.dataset.id); if (!d) return;
+    if (!await confirmDialog('Delete this document?', `${d.name} will be removed from this vendor.`)) return;
+    await run(async () => { await S.store.deleteDocument(d); await refresh(); }, 'Document deleted');
+  },
+  'pick-photos': () => document.getElementById('mood-input')?.click(),
+  'open-image': el => openImage(el.dataset.id),
+  'delete-image': async el => {
+    const img = findBy('images', el.dataset.id); if (!img) return;
+    if (!await confirmDialog('Delete this photo?', 'It will be removed from the mood board.')) return;
+    await run(async () => { await S.store.deleteImage(img); await refresh(); }, 'Photo deleted');
+  },
+  'cal-prev': () => shiftCal(-1),
+  'cal-next': () => shiftCal(1),
+  'cal-today': () => { S.cal = null; render(); },
+  'sign-out': async () => { await S.store.signOut(); S.user = null; S.role = null; S.hash = ''; try { history.replaceState(null, '', location.pathname); } catch (e) {} renderLogin(); },
+  'forgot': async () => {
+    const err = document.getElementById('login-err');
+    try { await S.store.resetPassword(String(CONFIG.SITE_EMAIL).trim()); err.textContent = ''; toast('A reset link is on its way to ' + CONFIG.SITE_EMAIL); } catch (e) { err.textContent = e.message; }
+  },
+  'add-resource': () => { const list = document.getElementById('res-list'); list.insertAdjacentHTML('beforeend', resRow({})); list.lastElementChild.querySelector('input').focus(); },
+  'remove-resource': el => el.closest('.res-row').remove(),
+  'pick-hero': () => document.getElementById('hero-input')?.click(),
+  'remove-hero': async () => {
+    const old = S.data.settings?.hero_path; if (!old) return;
+    await run(async () => { await S.store.saveSettings({hero_path:null}); await S.store.removeFiles([old]); await refresh(); }, 'Hero photo removed');
+  },
+  'reset-demo': async () => { if (!await confirmDialog('Restore the sample data?', 'This replaces everything in the demo with the example wedding.', 'Restore')) return; await run(async () => { S.store.reset(true); await refresh(); }, 'Sample data restored'); },
+  'clear-demo': async () => { if (!await confirmDialog('Start with a blank demo?', 'This clears all demo vendors, payments, and photos.', 'Clear demo')) return; await run(async () => { S.store.reset(false); await refresh(); }, 'Demo cleared'); },
+  'change-password': () => passwordModal(false)
+};
+document.addEventListener('click', e => {
+  if (!e.target.closest('.dd')) document.querySelectorAll('.dd.open').forEach(d => d.classList.remove('open'));
+  if (e.target.closest('.links a, .dd-item')) closeMenus();
+  const g = e.target.closest('[data-go]');
+  if (g && !e.target.closest('[data-action]')) { e.preventDefault(); go(g.dataset.go); return; }
+  const a = e.target.closest('[data-action]');
+  if (!a || a.closest('.modal-bg') && !a.closest('.modal')) return;
+  const fn = ACTIONS[a.dataset.action];
+  if (fn) { e.preventDefault(); e.stopPropagation(); fn(a, e); }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { const top = document.getElementById('modal-root').lastElementChild; if (top) top.querySelector('[data-close]')?.click(); else closeMenus(); }
+  if (e.key === 'Enter' && e.target.matches('figure[data-action], [data-go]')) e.target.click();
+});
+document.addEventListener('change', e => {
+  const t = e.target;
+  if (t.id === 'mood-input' && t.files.length) { const files = [...t.files]; t.value = ''; uploadImages(t.dataset.vendor, files); }
+  if (t.id === 'hero-input' && t.files.length) { const file = t.files[0]; t.value = ''; uploadHero(file); }
+});
+document.addEventListener('dragover', e => { const z = e.target.closest('[data-drop]'); if (z && z.dataset.drop) { e.preventDefault(); z.classList.add('over'); } });
+document.addEventListener('dragleave', e => { const z = e.target.closest('[data-drop]'); if (z && !z.contains(e.relatedTarget)) z.classList.remove('over'); });
+document.addEventListener('drop', e => { const z = e.target.closest('[data-drop]'); if (z && z.dataset.drop) { e.preventDefault(); z.classList.remove('over'); uploadImages(z.dataset.drop, [...e.dataTransfer.files]); } });
+document.addEventListener('submit', async e => {
+  const f = e.target;
+  if (f.id === 'login-form') {
+    e.preventDefault();
+    const fd = new FormData(f); const btn = f.querySelector('[type=submit]'); const err = document.getElementById('login-err');
+    btn.disabled = true; btn.textContent = 'Opening…'; err.textContent = '';
+    try { await S.store.signIn(String(CONFIG.SITE_EMAIL), String(fd.get('password'))); await afterLogin(await S.store.session()); }
+    catch (x) { err.textContent = x.message; btn.disabled = false; btn.textContent = 'Open'; }
+  }
+  if (f.id === 'settings-form') {
+    e.preventDefault();
+    const fd = new FormData(f); const btn = f.querySelector('[type=submit]');
+    const labels = fd.getAll('res_label'), urls = fd.getAll('res_url');
+    const resources = labels.map((l, i) => ({label:String(l).trim(), url:normUrl(urls[i])})).filter(r => r.url);
+    const wd = fd.get('wedding_date'); const t = k => String(fd.get(k) || '').trim();
+    btn.disabled = true; btn.textContent = 'Saving…';
+    const ok = await run(async () => {
+      await S.store.saveSettings({names:t('names'), wedding_date: wd ? new Date(wd).toISOString() : null, venue_name:t('venue_name'), venue_city:t('venue_city'), venue_address:t('venue_address'), total_budget:num(fd.get('total_budget')), resources});
+      await refresh();
+    }, 'Settings saved');
+    if (!ok) { btn.disabled = false; btn.textContent = 'Save changes'; }
+  }
+});
+
+boot().catch(showError);
+</script>
+</body>
+</html>
